@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.03"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/workout_add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Workout Name" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/workout_add_e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/workout_add_name"
+            android:layout_below="@+id/textView1" />
+
+        <Spinner
+            android:id="@+id/workout_add_e2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/workout_add_e1"
+            android:layout_below="@+id/workout_add_e1" />
+
+        <Button
+            android:id="@+id/button_workout_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/workout_add_e2"
+            android:layout_alignRight="@+id/workout_add_e2"
+            android:layout_below="@+id/workout_add_e2"
+            android:layout_marginTop="26dp"
+            android:text="Add Workout" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/workout_add_e1"
+            android:layout_below="@+id/workout_add_name"
+            android:layout_marginTop="25dp"
+            android:text="Please select 2 exercises for workout." />
+
+    </RelativeLayout>
+
+</LinearLayout>

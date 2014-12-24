@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Exercise Name" />
+
+        <EditText
+            android:id="@+id/exercise_edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+         <Button
+             android:id="@+id/button_exercise_edit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView2"
+             android:layout_alignRight="@+id/exercise_edit_description"
+             android:layout_below="@+id/exercise_edit_description"
+             android:layout_marginTop="36dp"
+             android:text="Update Exercise" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/exercise_edit_spinner"
+             android:layout_below="@+id/exercise_edit_spinner"
+             android:layout_marginTop="21dp"
+             android:text="Exercise Desccription" />
+
+         <EditText
+             android:id="@+id/exercise_edit_description"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textView2"
+             android:layout_alignRight="@+id/exercise_edit_spinner"
+             android:layout_below="@+id/textView2"
+             android:ems="10" />
+
+         <Spinner
+             android:id="@+id/exercise_edit_spinner"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/exercise_edit_name"
+             android:layout_below="@+id/exercise_edit_name"
+             android:layout_marginTop="31dp"
+             android:entries="@array/muscle_groups"
+             android:prompt="@string/dialog_title" />
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/exercise_edit_spinner"
+             android:layout_below="@+id/exercise_edit_name"
+             android:layout_marginTop="14dp"
+             android:text="Muscle Group" />
+
+    </RelativeLayout>
+
+</LinearLayout>

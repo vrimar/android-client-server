@@ -1,0 +1,90 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.a2.workoutapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+        
+	<uses-permission android:name="android.permission.INTERNET" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.a2.workoutapp.LoginActivity"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.a2.workoutapp.RegisterActivity"
+            android:label="Login" 
+            android:parentActivityName="com.a2.workoutapp.LoginActivity" >
+	        
+	        <meta-data
+	            android:name="android.support.LoginActivity"
+	            android:value="com.a2.workoutapp.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.a2.workoutapp.MainActivity"
+            android:label="@string/app_name" >            
+        </activity>
+        <activity
+            android:name="com.a2.workoutapp.ExerciseList"
+            android:label="ExerciseList" >
+        </activity>
+        <activity
+            android:name="com.a2.workoutapp.ExerciseDetails"
+            android:label="ExerciseList"
+            android:parentActivityName="com.a2.workoutapp.MainActivity" >	        
+	        <meta-data
+	            android:name="android.support.LoginActivity"
+	            android:value="com.a2.workoutapp.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.a2.workoutapp.ExerciseEdit"
+            android:label="Exercise List" 
+            android:parentActivityName="com.a2.workoutapp.MainActivity" >
+	        
+	        <meta-data
+	            android:name="android.support.MainActivity"
+	            android:value="com.a2.workoutapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.a2.workoutapp.ExerciseAdd"
+            android:label="Exercise List" 
+            android:parentActivityName="com.a2.workoutapp.MainActivity" >
+	        
+	        <meta-data
+	            android:name="android.support.MainActivity"
+	            android:value="com.a2.workoutapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.a2.workoutapp.WorkoutDetails"
+            android:label="Workout List" 
+            android:parentActivityName="com.a2.workoutapp.MainActivity" >
+	        
+	        <meta-data
+	            android:name="android.support.MainActivity"
+	            android:value="com.a2.workoutapp.MainActivity" />
+        </activity>
+         <activity
+            android:name="com.a2.workoutapp.WorkoutAdd"
+            android:label="Workout List" 
+            android:parentActivityName="com.a2.workoutapp.MainActivity" >
+	        
+	        <meta-data
+	            android:name="android.support.MainActivity"
+	            android:value="com.a2.workoutapp.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

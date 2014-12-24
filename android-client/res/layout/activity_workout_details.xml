@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/workout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+        <TextView
+            android:id="@+id/first_exercise_muscle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:text="firstMuscle" />
+
+        <TextView
+            android:id="@+id/first_exercise_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView2"
+            android:text="first descriptionfirst " />
+
+        <TextView
+            android:id="@+id/first_exercise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/workout_name"
+            android:layout_below="@+id/workout_name"
+            android:layout_marginTop="22dp"
+            android:text="Exercise1 Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/first_exercise_name"
+            android:layout_below="@+id/first_exercise_name"
+            android:text="Muscle Group:" />
+
+        <TextView
+            android:id="@+id/second_exercise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/first_exercise_description"
+            android:layout_below="@+id/first_exercise_description"
+            android:layout_marginTop="18dp"
+            android:text="Exercise 2 Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/second_exercise_name"
+            android:layout_below="@+id/second_exercise_name"
+            android:text="Muscle Group:" />
+
+        <TextView
+            android:id="@+id/second_exercise_muscle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView01"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_alignLeft="@+id/first_exercise_muscle"
+            android:text="secondMuscle" />
+
+        <TextView
+            android:id="@+id/second_exercise_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_below="@+id/TextView01"
+            android:text="second description" />
+
+    </RelativeLayout>
+
+</LinearLayout>

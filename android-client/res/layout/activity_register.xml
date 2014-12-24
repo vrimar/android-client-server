@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.40"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:hint="Username"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_username"
+            android:layout_alignRight="@+id/register_username"
+            android:layout_below="@+id/register_username"
+            android:ems="10"
+            android:hint="Password" 
+            android:inputType="textPassword|textNoSuggestions"/>
+
+        <EditText
+            android:id="@+id/register_retypepass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_password"
+            android:layout_alignRight="@+id/register_password"
+            android:layout_below="@+id/register_password"
+            android:ems="10"
+            android:hint="Retype Password"
+            android:inputType="textPassword|textNoSuggestions" />
+
+        <EditText
+            android:id="@+id/register_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_retypepass"
+            android:layout_alignRight="@+id/register_retypepass"
+            android:layout_below="@+id/register_retypepass"
+            android:ems="10"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/register_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_firstname"
+            android:layout_alignRight="@+id/register_firstname"
+            android:layout_below="@+id/register_firstname"
+            android:ems="10"
+            android:hint="Last Name" />
+
+        <EditText
+            android:id="@+id/register_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_lastname"
+            android:layout_alignRight="@+id/register_lastname"
+            android:layout_below="@+id/register_lastname"
+            android:ems="10"
+            android:hint="Weight in lbs." />
+
+        <Button
+            android:id="@+id/button_registerpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_weight"
+            android:layout_alignRight="@+id/register_weight"
+            android:layout_below="@+id/register_weight"
+            android:layout_marginTop="28dp"
+            android:textColor="#FFF" 
+            android:background="#48a6a7"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+</LinearLayout>

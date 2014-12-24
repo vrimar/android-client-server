@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">WorkoutApp</string>
+	<string name="password_label">Password:</string>
+	<string name="username_label">Username:</string>
+	<string name="login_button">Login</string>
+	<string name="title_activity_exercise_list">Exercise List</string>
+	<string name="title_activity_exercise_details">Exercise Details</string>
+	<string name="menu_settings">Settings</string>
+	<string name="dialog_title">Choose a muscle group</string>
+	<string-array name="muscle_groups">
+        <item>Chest</item>
+        <item>Shoulders</item>
+        <item>Legs</item>
+        <item>Abs</item>
+        <item>Biceps</item>
+        <item>Back</item>
+        <item>Triceps</item>
+        <item>Neck</item>
+    </string-array>
+</resources>
