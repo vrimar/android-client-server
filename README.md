@@ -16,13 +16,6 @@
 	<li>Run the 'WorkoutApp' project as 'Android' application</li>
 </ul>
 
-<h2> Screenshots </h2>
-
-<h3> Server </h3>
-<img src="screenshots/server.png"/>
-
-<h3> Login Page </h3>
-<img src="screenshots/Login.png"/>
 
 
 
